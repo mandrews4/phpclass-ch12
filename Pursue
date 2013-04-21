@@ -1,0 +1,12 @@
+P2 Move the code for connecting to and selecting the database to a separate
+   script, then include that script in the PHP pages that interact with the
+   database.
+A See select_blog.tmpl, add_entry.php, delete_entry.php, edit_entry.php
+  and view_entries.php
+
+P3 Make the add_entry.php form sticky.
+A  See add_entry.php
+
+P4 Change the code in view_entry.php so that it converts newline characters
+   in each entry into HTML break tags.
+A  See view_entry.php
