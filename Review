@@ -1,0 +1,51 @@
+Q1 What version of MySQL are you using? What values do you personally use
+   to connect to MySQL?
+A  I am using mysql 5.5.27 and logging into the server using "root" and
+   it's password
+
+Q2 How does a PHP script connect to a MySQL server? How does it
+   disconnect?
+A  A php script uses the mysql_connect() and mysql_close() functions
+   to connect and disconnect from the server, respectively
+
+Q3 What is the error suppression operator? What does it do?
+A  The error suppression operator is the "@" symbol. It prevents the
+   function that caused an error from displaying the details of the
+   error condition
+
+Q4 What function returns MySQL-reported errors?
+A  The mysql_error() function returns MySQL-reported errors
+
+Q5 What debugging techniques should you use when having problems with
+   a PHP script that interacts with MySQL?
+A  Use the mysql_error() function to display the details of the error(s)
+   and display the SQL statements that were being used when an error
+   occurred.
+
+Q6 How do you select which database to use?
+A  After establishing a connection to the database, the mysql_select_db()
+   function is used to select the desired database
+
+Q7 What SQL command is used to create a table? To add new records? To
+   retrieve records? To modify records? To remove records?
+A  The "create table TABLENAME (column1, column2, ...)" SQL command is
+   used to create a table.
+
+   The "insert into TABLENAME(column1, column2, ..., columnN) \
+        values(NUMBER, 'STRING', ...argN)" SQL command is used to add new
+   records.
+
+   The "select column1[,column2[...]] from TABLENAME [where CRITERIA]" SQL
+   command can be used to retrieve records from a database table.
+
+   The "update TABLENAME set column1=value1[,column2=value2[,...]] \
+        where CRITERIA" SQL command can be used to modify an existing
+   record.
+
+   The "delete from TABLENAME where CRITERIA" can be used to delete an
+   existing record form a table.
+
+Q8 What function should string values be run through to prevent SQL
+   injection attacks?
+A  The mysql_real_escape_string() function can be used to escape
+   suspicious characters in possible SQL injection attacks.
