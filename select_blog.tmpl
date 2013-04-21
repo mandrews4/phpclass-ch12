@@ -1,0 +1,7 @@
+<?php
+/*
+ * Open a connection to the database and select the select the "myblog" database
+ */
+$dbc = mysql_connect('localhost', 'root', 'PASSWORD');
+mysql_select_db('myblog', $dbc);
+?>
